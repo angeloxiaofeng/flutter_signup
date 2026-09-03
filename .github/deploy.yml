@@ -27,7 +27,7 @@ jobs:
      run: flutter pub Get
 
    - name: Build Web
-     run: flutter build web --release
+  run: flutter build web --release --base-href "/flutter_signup/"
 
    - name: Upload Artifact
      run: actions/upload-pages-artifact@v3
